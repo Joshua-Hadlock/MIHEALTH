@@ -1,0 +1,163 @@
+
+/* entire body */
+body {
+    background-image: url('pictures/grey_wash_wall.webp');
+    background-repeat: repeat;
+    background-color: darkgray;
+    margin: 0;
+}
+
+/* navigation bar */
+.navigation {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    margin: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 90px;
+}
+
+/* logo */
+.logo {
+    font-size: 60px;
+    display: flex;
+    margin-left: 50px;
+}
+.mi {
+    color: red;
+    margin: none;
+}
+.health {
+    color:rgb(25, 181, 25);
+    margin: none;
+}
+
+/* navigation links */
+.links {
+    margin-right: 100px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+ul {
+    list-style: none;
+    display: flex;
+    font-size: 40px;
+}
+
+a:hover{
+    font-size: 43px;
+    background-color:rgb(25, 181, 25);
+    color: black;
+    text-align: center;
+}
+
+/* picture boxes */
+.greenBox {
+    background-color: rgb(25, 181, 25);
+    width: 200px;
+}
+
+.whiteBox {
+    background-color: white;
+    width: 150px;
+}
+
+.box {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 25px;
+}
+
+
+/* content inside the website */
+
+#content {
+    display: flex;
+    margin: 150px 100px;
+    height: 700px;
+    justify-content: space-evenly;
+}
+
+/* wordbox */
+
+.wordBox {
+    width: 30%;
+    position: relative;
+    flex-shrink: 100;
+    max-height: 500px;
+}
+
+
+
+/* images */
+.images {
+display: flex;
+height: 700px;
+flex-wrap: wrap;
+margin-left: 30px;
+flex-shrink: 2;
+}
+
+.image1 {
+    background-image: url("pictures/apple-breakfast-quinoa-7.jpeg");
+
+}
+
+.image2 {
+    background-image: url("pictures/pasta-salad-recipe-for-lunch.jpeg");
+
+}
+
+.image3 {
+    background-image: url("pictures/rice.jpeg");
+
+}
+
+.imageMargin {
+    background-size:cover;
+    background-repeat: none;
+    width: 300px;
+    margin: 15px;
+    width: 350px;
+    display: flex;
+    flex-flow: wrap-reverse column;
+    justify-content: flex-end;
+    
+}
+
+.text {
+    color: black;
+    font-size: 23px;
+    font-size-adjust: 15px;
+    
+}
+
+.beHealthy {
+    color: black;
+    font-size: 80px;
+}
+
+.browse {
+    color: black;
+    font-size: 30px;
+    transition: .5s;
+    width: 300px;
+    
+}
+.browse:hover {
+    background-color:rgb(25, 181, 25);
+    color: white; 
+    width: 340px;
+    height: 40px;
+    font-size: 33px;
+    text-align: center;
+}
