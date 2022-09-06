@@ -18,6 +18,9 @@ body {
     position: fixed;
     top: 0;
     height: 90px;
+    /* flex-wrap: wrap; */
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 /* logo */
@@ -43,6 +46,7 @@ a {
     text-decoration: none;
     color: black;
     transition: .5s;
+    font-family: 'Times New Roman', Times, serif;
 }
 ul {
     list-style: none;
@@ -85,15 +89,16 @@ a:hover{
     margin: 150px 100px;
     height: 700px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 /* wordbox */
 
 .wordBox {
-    width: 30%;
-    position: relative;
+    width: 400px;
+    
     flex-shrink: 100;
-    max-height: 500px;
+    max-height: 700px;
 }
 
 
@@ -101,8 +106,8 @@ a:hover{
 /* images */
 .images {
 display: flex;
-height: 700px;
 flex-wrap: wrap;
+height: 700px;
 margin-left: 30px;
 flex-shrink: 2;
 }
@@ -125,9 +130,8 @@ flex-shrink: 2;
 .imageMargin {
     background-size:cover;
     background-repeat: none;
-    width: 300px;
+    width: 250px;
     margin: 15px;
-    width: 350px;
     display: flex;
     flex-flow: wrap-reverse column;
     justify-content: flex-end;
@@ -138,12 +142,14 @@ flex-shrink: 2;
     color: black;
     font-size: 23px;
     font-size-adjust: 15px;
-    
+    height: 300px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .beHealthy {
     color: black;
     font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .browse {
@@ -151,7 +157,7 @@ flex-shrink: 2;
     font-size: 30px;
     transition: .5s;
     width: 300px;
-    
+    font-family: 'Times New Roman', Times, serif;
 }
 .browse:hover {
     background-color:rgb(25, 181, 25);
@@ -160,4 +166,23 @@ flex-shrink: 2;
     height: 40px;
     font-size: 33px;
     text-align: center;
+}
+
+@media (max-width: 1285px) {
+    .links {
+        font-size: 25px;
+        margin-right: 50px;
+    }
+    .logo {
+        font-size: 30px;
+    }
+}
+@media (max-width: 750px) {
+    .links {
+        font-size: 20px;
+        margin-right: 25px;
+    }
+    .logo {
+        font-size: 25px;
+    }
 }
